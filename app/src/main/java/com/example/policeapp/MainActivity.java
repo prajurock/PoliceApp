@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     CardView cardView;
     CardView cardView1;
+    CardView cardView2;
+    CardView cardView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
         cardView=findViewById(R.id.beatManagment);
         cardView1=findViewById(R.id.GetStatus);
+        cardView2=findViewById(R.id.firManagment);
+        cardView3=findViewById(R.id.lookupNotices);
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,GetStatusActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,LookupNotices.class);
                 startActivity(intent);
             }
         });

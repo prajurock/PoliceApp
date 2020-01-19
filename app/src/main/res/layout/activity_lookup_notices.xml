@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LookupNotices">
+
+
+    <EditText
+        android:id="@+id/off"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:hint="name"
+        />
+
+
+    <Button
+        android:id="@+id/appt"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="request"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/off"
+        android:onClick="req"/>
+</RelativeLayout>
+

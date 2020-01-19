@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.policeapp">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GetStatusActivity"></activity>
+        <activity android:name=".LookupNotices"></activity>
+        <activity android:name=".GetStatusActivity" />
         <activity android:name=".BeatActivity" />
         <activity android:name=".BeatMangment" />
         <activity android:name=".MainActivity">
@@ -20,9 +25,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 </manifest>
